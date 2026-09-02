@@ -7,6 +7,7 @@ import Platforms from './pages/Platforms';
 import Courses from './pages/Courses';
 import CourseForm from './pages/CourseForm';
 import Customers from './pages/Customers';
+import Queries from './pages/Queries';
 
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, loading } = useAuth();
@@ -38,6 +39,7 @@ function App() {
         <Route path="courses/new" element={<CourseForm />} />
         <Route path="courses/edit/:id" element={<CourseForm />} />
         <Route path="customers" element={<Customers />} />
+        <Route path="queries" element={<Queries />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

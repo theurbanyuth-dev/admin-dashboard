@@ -4,6 +4,7 @@ import {
   Layers, 
   BookOpen, 
   Users, 
+  MessageSquare,
   LogOut,
   GraduationCap
 } from 'lucide-react';
@@ -14,6 +15,7 @@ const navItems = [
   { to: '/platforms', icon: Layers, label: 'Platforms' },
   { to: '/courses', icon: BookOpen, label: 'Courses' },
   { to: '/customers', icon: Users, label: 'Customers' },
+  { to: '/queries', icon: MessageSquare, label: 'Queries' },
 ]; 
 
 const Sidebar = ({ isOpen, setIsOpen }) => {
@@ -41,8 +43,8 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             <GraduationCap className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h1 className="font-bold text-gray-900">CourseAdmin</h1>
-            <p className="text-xs text-gray-500">Admin Panel</p>
+            <h1 className="font-bold text-gray-900">SkyBirds</h1>
+            <p className="text-xs text-gray-500">Seller Admin Panel</p>
           </div>
         </div>
 
@@ -58,7 +60,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium
                 transition-colors duration-150
                 ${isActive 
-                  ? 'bg-primary-50 text-primary-700' 
+                  ? 'bg-primary-50 text-primary-700 font-semibold' 
                   : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                 }
               `}
